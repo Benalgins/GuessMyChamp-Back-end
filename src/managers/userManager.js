@@ -32,3 +32,21 @@ exports.register = async (userData) => {
 		throw error;
 	}
 };
+
+exports.topUsers = async () => {
+	try {
+		const users = await User.find().sort({ points: -1 });
+
+		const usernames = users.map((user) => {
+			const namePart = user.email.split('@')[0];
+			return {
+				username: namePart,
+				points: user.points,
+			};
+		});
+
+		return usernames;
+	} catch (error) {
+		throw error;
+	}
+};
