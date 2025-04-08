@@ -37,3 +37,12 @@ exports.addChampion = async (championData) => {
 		throw error;
 	}
 };
+
+exports.GiveAllChampions = async () => {
+	try {
+		const champions = await Champion.find().select('name').sort({ name: 1 });
+		return champions;
+	} catch (error) {
+		throw error;
+	}
+};

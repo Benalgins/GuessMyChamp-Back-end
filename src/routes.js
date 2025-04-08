@@ -61,4 +61,15 @@ router.post('/add-champion', async (req, res) => {
 	}
 });
 
+router.get('/catalog', async (req, res) => {
+	try {
+		const champions = await championManager.GiveAllChampions();
+		res.status(200).json(champions);
+	} catch (error) {
+		res
+			.status(500)
+			.json({ message: 'Error fetching champions', error: error.message });
+	}
+});
+
 module.exports = router;
