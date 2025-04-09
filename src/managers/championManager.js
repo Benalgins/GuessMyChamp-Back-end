@@ -1,5 +1,6 @@
 const Champion = require('../models/Champion');
 const User = require('../models/User');
+const mongoose = require('mongoose');
 
 exports.addChampion = async (championData) => {
 	try {
@@ -48,8 +49,9 @@ exports.GiveAllChampions = async () => {
 };
 
 exports.UserChampions = async (userEmail) => {
+	const normalizedEmail = userEmail.toLowerCase();
 	try {
-		const champions = await Champion.find({ creator: userEmail }).select(
+		const champions = await Champion.find({ creator: normalizedEmail }).select(
 			'name position gender releaseYear'
 		);
 		return champions;
@@ -85,4 +87,34 @@ exports.deleteChampion = async (championId) => {
 	} catch (error) {
 		throw error;
 	}
+};
+
+exports.getChampionById = async (id) => {
+	const mongoose = require('mongoose');
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		throw new Error('Invalid ID');
+	}
+
+	const champion = await Champion.findById(id);
+	return champion;
+};
+
+exports.updateChampion = async (id, updatedData) => {
+	if (!mongoose.Types.ObjectId.isValid(id)) {
+		throw new Error('Invalid champion ID');
+	}
+
+	const champion = await Champion.findById(id);
+	if (!champion) {
+		throw new Error('Champion not found');
+	}
+
+	champion.name = updatedData.name || champion.name;
+	champion.gender = updatedData.gender || champion.gender;
+	champion.position = updatedData.position || champion.position;
+	champion.releaseYear = updatedData.releaseYear || champion.releaseYear;
+
+	await champion.save();
+
+	return champion;
 };

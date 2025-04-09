@@ -2,8 +2,9 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 
 exports.login = async (userData) => {
+	const normalizedEmail = userData.email.toLowerCase();
 	try {
-		const user = await User.findOne({ email: userData.email });
+		const user = await User.findOne({ email: normalizedEmail });
 
 		if (!user) {
 			throw new Error('Username not found');
@@ -21,7 +22,8 @@ exports.login = async (userData) => {
 
 exports.register = async (userData) => {
 	try {
-		const existingUser = await User.findOne({ email: userData.email });
+		const normalizedEmail = userData.email.toLowerCase();
+		const existingUser = await User.findOne({ email: normalizedEmail });
 		if (existingUser) {
 			throw new Error('User already exists');
 		}
@@ -34,7 +36,7 @@ exports.register = async (userData) => {
 
 exports.topUsers = async () => {
 	try {
-		const users = await User.find().sort({ points: -1 });
+		const users = await User.find().sort({ points: -1 }).limit(10);
 
 		const usernames = users.map((user) => {
 			const namePart = user.email.split('@')[0];

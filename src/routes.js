@@ -128,6 +128,23 @@ router.delete('/champions/:id', async (req, res) => {
 	}
 });
 
+router.get('/champions/:id', async (req, res) => {
+	const id = req.params.id;
+
+	try {
+		const champion = await championManager.getChampionById(id);
+		if (!champion) {
+			return res.status(404).json({ message: 'Champion not found' });
+		}
+
+		res.status(200).json(champion);
+	} catch (error) {
+		res
+			.status(500)
+			.json({ message: 'Error retrieving champion', error: error.message });
+	}
+});
+
 router.put('/champions/:id', async (req, res) => {
 	try {
 		const updated = await championManager.updateChampion(

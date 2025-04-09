@@ -10,7 +10,7 @@ const PORT = 5000; //Change it if 5000 is used.
 const app = express();
 app.use(
 	cors({
-		origin: 'http://localhost:5173', //Change it to your localhost
+		origin: 'http://localhost:5173', //!!Change it to your localhost based on the FRONT-END !!
 		credentials: true,
 	})
 );
@@ -33,7 +33,7 @@ app.use(
 app.use(router);
 
 mongoose
-	.connect('mongodb://127.0.0.1:27017/GuessMyChamp')
+	.connect('mongodb://127.0.0.1:27017/GuessMyChamp') //Change it to your mongoDB port
 	.then(() => console.log('Connected to MongoDB'))
 	.catch((err) => console.error(err));
 

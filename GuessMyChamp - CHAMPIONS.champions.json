@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "67f544346b61922d91a590e2"
+  },
+  "name": "Ahri",
+  "position": "Top",
+  "gender": "Female",
+  "releaseYear": 2012,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f560a747f17e6f83bfa650"
+  },
+  "name": "Janna",
+  "position": "Support",
+  "gender": "Female",
+  "releaseYear": 2009,
+  "creator": "Djani@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f57f12e6a34122b02a9397"
+  },
+  "name": "Draven",
+  "position": "Marksman",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "pio@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f57f69e6a34122b02a939d"
+  },
+  "name": "Olaf",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2008,
+  "creator": "pio@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f59270c4c0dc45c0cbe2bb"
+  },
+  "name": "Tryndamere",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "TestSub@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f68d0a5ba89463408b3157"
+  },
+  "name": "Vayne",
+  "position": "Marksman",
+  "gender": "Female",
+  "releaseYear": 2009,
+  "creator": "Miro@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f68d395ba89463408b315d"
+  },
+  "name": "Yuumi",
+  "position": "Support",
+  "gender": "Female",
+  "releaseYear": 2020,
+  "creator": "Miro@abv.bg",
+  "__v": 0
+}]
