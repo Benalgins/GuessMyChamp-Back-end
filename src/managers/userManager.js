@@ -22,7 +22,6 @@ exports.login = async (userData) => {
 exports.register = async (userData) => {
 	try {
 		const existingUser = await User.findOne({ email: userData.email });
-
 		if (existingUser) {
 			throw new Error('User already exists');
 		}

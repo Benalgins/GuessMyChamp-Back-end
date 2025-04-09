@@ -20,7 +20,12 @@ app.use(
 		secret: 'apple',
 		resave: false,
 		saveUninitialized: true,
-		cookie: { secure: false },
+		cookie: {
+			secure: false,
+			httpOnly: true,
+			sameSite: 'lax',
+			maxAge: 24 * 60 * 60 * 1000,
+		},
 	})
 );
 

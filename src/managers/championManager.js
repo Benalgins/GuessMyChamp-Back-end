@@ -46,3 +46,14 @@ exports.GiveAllChampions = async () => {
 		throw error;
 	}
 };
+
+exports.UserChampions = async (userEmail) => {
+	try {
+		const champions = await Champion.find({ creator: userEmail }).select(
+			'name position gender releaseYear'
+		);
+		return champions;
+	} catch (error) {
+		throw error;
+	}
+};
