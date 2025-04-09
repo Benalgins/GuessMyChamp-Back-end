@@ -2,14 +2,15 @@ const express = require('express');
 const router = require('./routes');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const User = require('./managers/userManager');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+
+const PORT = 5000; //Change it if 5000 is used.
 
 const app = express();
 app.use(
 	cors({
-		origin: 'http://localhost:5173',
+		origin: 'http://localhost:5173', //Change it to your localhost
 		credentials: true,
 	})
 );
@@ -36,4 +37,4 @@ mongoose
 	.then(() => console.log('Connected to MongoDB'))
 	.catch((err) => console.error(err));
 
-app.listen(5000, console.log('Listening on port 5000'));
+app.listen(PORT, console.log(`Listening on port ${PORT}`));

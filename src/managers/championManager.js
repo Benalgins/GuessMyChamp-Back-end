@@ -57,3 +57,32 @@ exports.UserChampions = async (userEmail) => {
 		throw error;
 	}
 };
+
+exports.deleteChampion = async (championId) => {
+	try {
+		const champion = await Champion.findById(championId);
+
+		if (!champion) {
+			throw new Error('Champion not found');
+		}
+
+		const userEmail = champion.creator;
+		const user = await User.findOne({ email: userEmail });
+
+		if (!user) {
+			throw new Error('User not found');
+		}
+
+		user.points -= 10;
+		await user.save();
+		const deletedChampion = await Champion.findByIdAndDelete(championId);
+
+		if (!deletedChampion) {
+			throw new Error('Error deleting champion');
+		}
+
+		return { deletedChampion, user };
+	} catch (error) {
+		throw error;
+	}
+};

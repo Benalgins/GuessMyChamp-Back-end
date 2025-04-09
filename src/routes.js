@@ -112,4 +112,34 @@ router.get('/my-champions', async (req, res) => {
 	}
 });
 
+router.delete('/champions/:id', async (req, res) => {
+	const { id } = req.params;
+
+	try {
+		const { deletedChampion, user } = await championManager.deleteChampion(id);
+
+		res.status(200).json({
+			message: 'Champion deleted successfully, and 10 points deducted.',
+			champion: deletedChampion,
+			updatedUser: user,
+		});
+	} catch (error) {
+		res.status(400).json({ message: error.message });
+	}
+});
+
+router.put('/champions/:id', async (req, res) => {
+	try {
+		const updated = await championManager.updateChampion(
+			req.params.id,
+			req.body
+		);
+		res
+			.status(200)
+			.json({ message: 'Champion updated successfully', champion: updated });
+	} catch (error) {
+		res.status(400).json({ message: error.message });
+	}
+});
+
 module.exports = router;
