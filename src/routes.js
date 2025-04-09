@@ -13,10 +13,7 @@ router.post('/register', async (req, res) => {
 		const newUser = await userManager.register(userData);
 
 		req.session.email = newUser.email;
-		res.cookie('userId', newUser._id.toString(), {
-			httpOnly: true,
-			maxAge: 24 * 60 * 60 * 1000,
-		});
+		res.cookie('userId', newUser._id.toString());
 
 		res.status(200).json({
 			message: 'User registered successfully.',
@@ -33,10 +30,7 @@ router.post('/login', async (req, res) => {
 		const loginUser = await userManager.login(userData);
 		req.session.email = loginUser.email;
 
-		res.cookie('userId', loginUser._id.toString(), {
-			httpOnly: true,
-			maxAge: 24 * 60 * 60 * 1000,
-		});
+		res.cookie('userId', loginUser._id.toString());
 		res.status(200).json({ message: 'Wellcome', user: loginUser });
 	} catch (error) {
 		res.status(400).json({ message: error.message });

@@ -9,7 +9,10 @@ exports.addChampion = async (championData) => {
 		);
 		const championsData = await response.json();
 		const championsList = Object.keys(championsData.data);
-
+		const existingChamp = await Champion.findOne({ name: championData.name });
+		if (existingChamp) {
+			throw new Error('Champion already exists');
+		}
 		if (!championsList.includes(championData.name)) {
 			throw new Error('Champion not found in the League of Legends database');
 		}
@@ -103,7 +106,17 @@ exports.updateChampion = async (id, updatedData) => {
 	if (!mongoose.Types.ObjectId.isValid(id)) {
 		throw new Error('Invalid champion ID');
 	}
-
+	const existingChamp = await Champion.findOne({ name: updatedData.name });
+	if (existingChamp && existingChamp._id.toString() !== id) {
+		throw new Error('Champion with this name already exists');
+	}
+	if (updatedData.releaseYear !== undefined) {
+		const year = Number(updatedData.releaseYear);
+		const currentYear = new Date().getFullYear();
+		if (!Number.isInteger(year) || year < 2009 || year > currentYear) {
+			throw new Error(`Release year must be between 2009 and ${currentYear}`);
+		}
+	}
 	const champion = await Champion.findById(id);
 	if (!champion) {
 		throw new Error('Champion not found');

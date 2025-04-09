@@ -1,86 +1,89 @@
-[{
-  "_id": {
-    "$oid": "67f3fe5b6f11336830317a28"
-  },
-  "password": "121234",
-  "email": "pepo@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f3feadb05eaf54ec3318ef"
-  },
-  "password": "121234",
-  "email": "pepo@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f3feda9476609854d1dd00"
-  },
-  "email": "pio@abv.bg",
-  "password": "$2b$10$zT9VUqx7lkGfm3SiYOE/UeyHf69pREV/dOo.EShdLA7AENLuOauv2",
-  "__v": 0,
-  "championsCreated": [
-    "Draven",
-    "Olaf"
-  ],
-  "points": 10
-},
-{
-  "_id": {
-    "$oid": "67f532c48f0c3ea085632106"
-  },
-  "email": "testo@abv.bg",
-  "password": "$2b$10$KkLdDRdUB5OUN0QA4Zem7euVvCxb7zxtfAvnxpVJKjmzgfz7sqdtG",
-  "points": 0,
-  "championsCreated": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f5607147f17e6f83bfa64d"
-  },
-  "email": "Djani@abv.bg",
-  "password": "$2b$10$QTLqfWuPiU6OVkMd6nfOwemVHa4n4nToVBRoSt7rkj0hOQF8KQjRe",
-  "points": 10,
-  "championsCreated": [
-    "Janna"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f59231c4c0dc45c0cbe2b7"
-  },
-  "email": "TestSub@abv.bg",
-  "password": "$2b$10$cdKvBFpg0/rM1pVRBf1tLOOYbLiL1.We2y9oEiBCZ5WuIq1zHrSIG",
-  "points": 10,
-  "championsCreated": [
-    "Tryndamere"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f68cf55ba89463408b3153"
-  },
-  "email": "Miro@abv.bg",
-  "password": "$2b$10$G2cVND0/anGskLOT1m4WA.1yDLGxIlxOlyrENLQxo0dnbbHaJRNEe",
-  "points": 20,
-  "championsCreated": [
-    "Vayne",
-    "Yuumi"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f691dfebeabe37da14aae9"
-  },
-  "email": "Kiko@abv.bg",
-  "password": "$2b$10$LiV7H2RF0VZYUSfsW2cEFes5d30YBiFUrDOdj9r.Hs15j0yJOCIAi",
-  "points": 0,
-  "championsCreated": [],
-  "__v": 0
-}]
+[
+	{
+		"_id": {
+			"$oid": "67f3fe5b6f11336830317a28"
+		},
+		"password": "121234",
+		"email": "pepo@abv.bg",
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f3feadb05eaf54ec3318ef"
+		},
+		"password": "121234",
+		"email": "pepo@abv.bg",
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f3feda9476609854d1dd00"
+		},
+		"email": "pio@abv.bg",
+		"password": "$2b$10$zT9VUqx7lkGfm3SiYOE/UeyHf69pREV/dOo.EShdLA7AENLuOauv2",
+		"__v": 0,
+		"championsCreated": ["Draven", "Olaf"],
+		"points": 10
+	},
+	{
+		"_id": {
+			"$oid": "67f532c48f0c3ea085632106"
+		},
+		"email": "testo@abv.bg",
+		"password": "$2b$10$KkLdDRdUB5OUN0QA4Zem7euVvCxb7zxtfAvnxpVJKjmzgfz7sqdtG",
+		"points": 0,
+		"championsCreated": [],
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f5607147f17e6f83bfa64d"
+		},
+		"email": "Djani@abv.bg",
+		"password": "$2b$10$QTLqfWuPiU6OVkMd6nfOwemVHa4n4nToVBRoSt7rkj0hOQF8KQjRe",
+		"points": 10,
+		"championsCreated": ["Janna"],
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f59231c4c0dc45c0cbe2b7"
+		},
+		"email": "TestSub@abv.bg",
+		"password": "$2b$10$cdKvBFpg0/rM1pVRBf1tLOOYbLiL1.We2y9oEiBCZ5WuIq1zHrSIG",
+		"points": 10,
+		"championsCreated": ["Tryndamere"],
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f68cf55ba89463408b3153"
+		},
+		"email": "Miro@abv.bg",
+		"password": "$2b$10$G2cVND0/anGskLOT1m4WA.1yDLGxIlxOlyrENLQxo0dnbbHaJRNEe",
+		"points": 20,
+		"championsCreated": ["Vayne", "Yuumi"],
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f691dfebeabe37da14aae9"
+		},
+		"email": "Kiko@abv.bg",
+		"password": "$2b$10$LiV7H2RF0VZYUSfsW2cEFes5d30YBiFUrDOdj9r.Hs15j0yJOCIAi",
+		"points": 0,
+		"championsCreated": [],
+		"__v": 0
+	},
+	{
+		"_id": {
+			"$oid": "67f6dfbe4f11d21e3ed33879"
+		},
+		"email": "tit@abv.bg",
+		"password": "$2b$10$pxFcNcyU6lLNSfJ58PRkte.c9EuEQDw4QcOgjjp1w9sPld3KWbEmC",
+		"points": 40,
+		"championsCreated": ["Nocturne", "Nunu", "Teemo", "Syndra"],
+		"__v": 0
+	}
+]
+// 123321

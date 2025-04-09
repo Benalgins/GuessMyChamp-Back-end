@@ -27,7 +27,10 @@ exports.register = async (userData) => {
 		if (existingUser) {
 			throw new Error('User already exists');
 		}
-		const newUser = await User.create(userData);
+		const newUser = await User.create({
+			email: normalizedEmail,
+			password: userData.password,
+		});
 		return newUser;
 	} catch (error) {
 		throw error;
