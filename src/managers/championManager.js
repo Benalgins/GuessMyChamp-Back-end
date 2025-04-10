@@ -85,6 +85,10 @@ exports.deleteChampion = async (championId) => {
 		}
 
 		user.points -= 10;
+		user.championsCreated = user.championsCreated.filter(
+			(name) => name !== champion.name
+		);
+
 		await user.save();
 		const deletedChampion = await Champion.findByIdAndDelete(championId);
 
