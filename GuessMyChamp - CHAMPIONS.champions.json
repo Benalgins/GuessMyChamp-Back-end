@@ -1,208 +1,224 @@
 [{
   "_id": {
-    "$oid": "67f544346b61922d91a590e2"
+    "$oid": "67f810894f75f8a89f961914"
   },
-  "name": "Ahri",
-  "position": "Top",
-  "gender": "Female",
-  "releaseYear": 2012,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f560a747f17e6f83bfa650"
-  },
-  "name": "Janna",
-  "position": "Support",
-  "gender": "Female",
+  "name": "Darius",
+  "position": "top",
+  "gender": "male",
+  "range": "melee",
+  "resource": "mana",
+  "region": "noxus",
   "releaseYear": 2009,
-  "creator": "Djani@abv.bg",
+  "creator": "qvor@abv.bg",
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "67f57f12e6a34122b02a9397"
-  },
-  "name": "Draven",
-  "position": "Marksman",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "pio@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f57f69e6a34122b02a939d"
-  },
-  "name": "Olaf",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2008,
-  "creator": "pio@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f59270c4c0dc45c0cbe2bb"
-  },
-  "name": "Tryndamere",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "TestSub@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f68d0a5ba89463408b3157"
-  },
-  "name": "Vayne",
-  "position": "Marksman",
-  "gender": "Female",
-  "releaseYear": 2009,
-  "creator": "Miro@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f68d395ba89463408b315d"
-  },
-  "name": "Yuumi",
-  "position": "Support",
-  "gender": "Female",
-  "releaseYear": 2020,
-  "creator": "Miro@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6a6138b3fbbb636a3754f"
-  },
-  "name": "Sivir",
-  "position": "Marksman",
-  "gender": "Female",
-  "releaseYear": 2010,
-  "creator": "mitko@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6a6318b3fbbb636a37554"
-  },
-  "name": "Twitch",
-  "position": "Marksman",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "mitko@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6a64c8b3fbbb636a37559"
-  },
-  "name": "Aatrox",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2011,
-  "creator": "mitko@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6db52c2819419192a771f"
-  },
-  "name": "Gangplank",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "mitko@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6dfe84f11d21e3ed3387d"
-  },
-  "name": "Nocturne",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2011,
-  "creator": "tit@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6e0444f11d21e3ed3388d"
-  },
-  "name": "Nunu",
-  "position": "Jungle",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "tit@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6e0644f11d21e3ed33896"
-  },
-  "name": "Teemo",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "tit@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6e0744f11d21e3ed3389b"
-  },
-  "name": "Syndra",
-  "position": "Mid",
-  "gender": "Female",
-  "releaseYear": 2013,
-  "creator": "tit@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6efa01b683d2e1c22909a"
-  },
-  "name": "Trundle",
-  "position": "Top",
-  "gender": "Male",
-  "releaseYear": 2009,
-  "creator": "tit@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6f4921b683d2e1c229111"
-  },
-  "name": "Leona",
-  "position": "Support",
-  "gender": "Female",
-  "releaseYear": 2010,
-  "creator": "krasi@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6f54a1b683d2e1c22911f"
+    "$oid": "67f810e64f75f8a89f961940"
   },
   "name": "MissFortune",
-  "position": "Marksman",
-  "gender": "Female",
+  "position": "marksman",
+  "gender": "female",
+  "range": "range",
+  "resource": "mana",
+  "region": "bilgewater",
+  "releaseYear": 2009,
+  "creator": "qvor@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f811134f75f8a89f961946"
+  },
+  "name": "Olaf",
+  "position": "top",
+  "gender": "male",
+  "range": "melee",
+  "resource": "mana",
+  "region": "freljord",
+  "releaseYear": 2009,
+  "creator": "qvor@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f811644f75f8a89f96194c"
+  },
+  "name": "Katarina",
+  "position": "mid",
+  "gender": "female",
+  "range": "melee",
+  "resource": "manaless",
+  "region": "noxus",
+  "releaseYear": 2009,
+  "creator": "qvor@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f815384f75f8a89f96196d"
+  },
+  "name": "Sivir",
+  "position": "marksman",
+  "gender": "male",
+  "range": "range",
+  "resource": "mana",
+  "region": "targon",
+  "releaseYear": 2009,
+  "creator": "pesho@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8161b2063b4792f2600f5"
+  },
+  "name": "AurelionSol",
+  "position": "mid",
+  "gender": "cosmic",
+  "range": "range",
+  "resource": "mana",
+  "region": "targon",
+  "releaseYear": 2013,
+  "creator": "qni@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81929500a16fd0c0dcbb4"
+  },
+  "name": "Nocturne",
+  "position": "jungle",
+  "gender": "demon",
+  "range": "melee",
+  "resource": "mana",
+  "region": "shadow isles",
+  "releaseYear": 2009,
+  "creator": "kiko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81946500a16fd0c0dcbb8"
+  },
+  "name": "Zac",
+  "position": "jungle",
+  "gender": "male",
+  "range": "melee",
+  "resource": "health",
+  "region": "zaun",
+  "releaseYear": 2011,
+  "creator": "kiko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8196d500a16fd0c0dcbbd"
+  },
+  "name": "Khazix",
+  "position": "jungle",
+  "gender": "male",
+  "range": "melee",
+  "resource": "mana",
+  "region": "the void",
+  "releaseYear": 2011,
+  "creator": "kiko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81998500a16fd0c0dcbc6"
+  },
+  "name": "Yuumi",
+  "position": "support",
+  "gender": "female",
+  "range": "range",
+  "resource": "mana",
+  "region": "ionia",
+  "releaseYear": 2019,
+  "creator": "kiko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81a55500a16fd0c0dcbd7"
+  },
+  "name": "Kaisa",
+  "position": "marksman",
+  "gender": "female",
+  "range": "range",
+  "resource": "mana",
+  "region": "the void",
+  "releaseYear": 2019,
+  "creator": "petq@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81a71500a16fd0c0dcbdb"
+  },
+  "name": "Annie",
+  "position": "support",
+  "gender": "female",
+  "range": "range",
+  "resource": "mana",
+  "region": "demacia",
   "releaseYear": 2009,
   "creator": "petq@abv.bg",
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "67f6f8501b683d2e1c229143"
+    "$oid": "67f81a92500a16fd0c0dcbdf"
   },
-  "name": "Corki",
-  "position": "Marksman",
-  "gender": "Male",
-  "releaseYear": 2011,
-  "creator": "tit@abv.bg",
+  "name": "Rengar",
+  "position": "jungle",
+  "gender": "male",
+  "range": "melee",
+  "resource": "flow",
+  "region": "ionia",
+  "releaseYear": 2012,
+  "creator": "petq@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81aac500a16fd0c0dcbe3"
+  },
+  "name": "Rumble",
+  "position": "top",
+  "gender": "male",
+  "range": "melee",
+  "resource": "heat",
+  "region": "zaun",
+  "releaseYear": 2010,
+  "creator": "petq@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81ae8500a16fd0c0dcbf2"
+  },
+  "name": "Trundle",
+  "position": "top",
+  "gender": "male",
+  "range": "melee",
+  "resource": "mana",
+  "region": "freljord",
+  "releaseYear": 2009,
+  "creator": "misho@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81e05500a16fd0c0dcc25"
+  },
+  "name": "Karma",
+  "position": "support",
+  "gender": "male",
+  "range": "range",
+  "resource": "mana",
+  "region": "ionia",
+  "releaseYear": 2012,
+  "creator": "gosho@abv.bg",
   "__v": 0
 }]

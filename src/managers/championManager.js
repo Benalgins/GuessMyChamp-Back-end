@@ -9,20 +9,26 @@ exports.addChampion = async (championData) => {
 		);
 		const championsData = await response.json();
 		const championsList = Object.keys(championsData.data);
-		const existingChamp = await Champion.findOne({ name: championData.name });
+		const existingChamp = await Champion.findOne({
+			name: championData.name,
+		});
+		const championName = championData.name;
 		if (existingChamp) {
 			throw new Error('Champion already exists');
 		}
-		if (!championsList.includes(championData.name)) {
+		if (!championsList.includes(championName)) {
 			throw new Error('Champion not found in the League of Legends database');
 		}
 
 		const newChampion = new Champion({
 			name: championData.name,
-			position: championData.position,
-			gender: championData.gender,
+			position: championData.position.toLowerCase(),
+			gender: championData.gender.toLowerCase(),
+			resource: championData.resource.toLowerCase(),
+			range: championData.range.toLowerCase(),
+			region: championData.region.toLowerCase(),
 			releaseYear: Number(championData.releaseYear),
-			creator: championData.creator,
+			creator: championData.creator.toLowerCase(),
 		});
 
 		await newChampion.save();
@@ -55,7 +61,7 @@ exports.UserChampions = async (userEmail) => {
 	const normalizedEmail = userEmail.toLowerCase();
 	try {
 		const champions = await Champion.find({ creator: normalizedEmail }).select(
-			'name position gender releaseYear'
+			'name position gender releaseYear region range resource'
 		);
 		return champions;
 	} catch (error) {
@@ -123,8 +129,16 @@ exports.updateChampion = async (id, updatedData) => {
 	}
 
 	champion.name = updatedData.name || champion.name;
-	champion.gender = updatedData.gender || champion.gender;
-	champion.position = updatedData.position || champion.position;
+	champion.gender =
+		updatedData.gender.toLowerCase() || champion.gender.toLowerCase();
+	champion.position =
+		updatedData.position.toLowerCase() || champion.position.toLowerCase();
+	champion.range =
+		updatedData.range.toLowerCase() || champion.range.toLowerCase();
+	champion.region =
+		updatedData.region.toLowerCase() || champion.region.toLowerCase();
+	champion.resource =
+		updatedData.resource.toLowerCase() || champion.resource.toLowerCase();
 	champion.releaseYear = updatedData.releaseYear || champion.releaseYear;
 
 	await champion.save();

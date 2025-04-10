@@ -1,143 +1,94 @@
 [{
   "_id": {
-    "$oid": "67f3fe5b6f11336830317a28"
+    "$oid": "67f80efe2c83584408808454"
   },
-  "password": "121234",
-  "email": "pepo@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f3feadb05eaf54ec3318ef"
-  },
-  "password": "121234",
-  "email": "pepo@abv.bg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f3feda9476609854d1dd00"
-  },
-  "email": "pio@abv.bg",
-  "password": "$2b$10$zT9VUqx7lkGfm3SiYOE/UeyHf69pREV/dOo.EShdLA7AENLuOauv2",
-  "__v": 0,
-  "championsCreated": [
-    "Draven",
-    "Olaf"
-  ],
-  "points": 10
-},
-{
-  "_id": {
-    "$oid": "67f532c48f0c3ea085632106"
-  },
-  "email": "testo@abv.bg",
-  "password": "$2b$10$KkLdDRdUB5OUN0QA4Zem7euVvCxb7zxtfAvnxpVJKjmzgfz7sqdtG",
-  "points": 0,
-  "championsCreated": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f5607147f17e6f83bfa64d"
-  },
-  "email": "Djani@abv.bg",
-  "password": "$2b$10$QTLqfWuPiU6OVkMd6nfOwemVHa4n4nToVBRoSt7rkj0hOQF8KQjRe",
-  "points": 10,
-  "championsCreated": [
-    "Janna"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f59231c4c0dc45c0cbe2b7"
-  },
-  "email": "TestSub@abv.bg",
-  "password": "$2b$10$cdKvBFpg0/rM1pVRBf1tLOOYbLiL1.We2y9oEiBCZ5WuIq1zHrSIG",
-  "points": 10,
-  "championsCreated": [
-    "Tryndamere"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f68cf55ba89463408b3153"
-  },
-  "email": "miro@abv.bg",
-  "password": "$2b$10$G2cVND0/anGskLOT1m4WA.1yDLGxIlxOlyrENLQxo0dnbbHaJRNEe",
-  "points": 20,
-  "championsCreated": [
-    "Vayne",
-    "Yuumi"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f691dfebeabe37da14aae9"
-  },
-  "email": "Kiko@abv.bg",
-  "password": "$2b$10$LiV7H2RF0VZYUSfsW2cEFes5d30YBiFUrDOdj9r.Hs15j0yJOCIAi",
-  "points": 0,
-  "championsCreated": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6a5fc8b3fbbb636a3754c"
-  },
-  "email": "mitko@abv.bg",
-  "password": "$2b$10$y/nZ2sBh0LQPqAI/wpEXT.T.dHKdqksZ1hRUhRpJB50ZIEycl93wq",
+  "email": "qvor@abv.bg",
+  "password": "$2b$10$nzwQhTdMjiTAug1dDR1ESeHxZgy7cYi9dQOW59Ou4AtRJZjFlRpvG",
   "points": 40,
   "championsCreated": [
-    "Sivir",
-    "Twitch",
-    "Aatrox",
-    "Gangplank",
+    "Darius",
+    "MissFortune",
+    "Olaf",
+    "Katarina"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f811ab4f75f8a89f961956"
+  },
+  "email": "pesho@abv.bg",
+  "password": "$2b$10$EaHeyf3SIO06PnSujz3ex.CNNbUayFFF3k4vNl9JDgwNByVgTJpoG",
+  "points": 10,
+  "championsCreated": [
     "Sivir"
   ],
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "67f6dfbe4f11d21e3ed33879"
+    "$oid": "67f815fc2063b4792f2600f2"
   },
-  "email": "tit@abv.bg",
-  "password": "$2b$10$pxFcNcyU6lLNSfJ58PRkte.c9EuEQDw4QcOgjjp1w9sPld3KWbEmC",
-  "points": 60,
+  "email": "qni@abv.bg",
+  "password": "$2b$10$zNii3CHDYiiGU2ogOfozCO4MbK1mokkf1RbPUej8GZHsIGWNt1qt.",
+  "points": 10,
+  "championsCreated": [
+    "AurelionSol"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8186c2063b4792f260105"
+  },
+  "email": "kiko@abv.bg",
+  "password": "$2b$10$psqAwBJfoLHBnbSxE8kotOqgJoYsdnE5d247QPKAm3EUNIRrgtAuW",
+  "points": 40,
   "championsCreated": [
     "Nocturne",
-    "Nunu",
-    "Teemo",
-    "Syndra",
-    "Trundle",
-    "Corki"
+    "Zac",
+    "Khazix",
+    "Yuumi"
   ],
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "67f6f4671b683d2e1c22910d"
-  },
-  "email": "krasi@abv.bg",
-  "password": "$2b$10$HXfxaVq1yQL9ZX/LahKd0Odc3rQeLFb/jI4oMo/t2r4OLbxgJkJoC",
-  "points": 10,
-  "championsCreated": [
-    "Leona"
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67f6f4c51b683d2e1c22911a"
+    "$oid": "67f81a40500a16fd0c0dcbd4"
   },
   "email": "petq@abv.bg",
-  "password": "$2b$10$7UHRJlxza8Qe7mDnQUAUW.YlkHMydZNu6B83KjGngAdCF1szl3LRG",
+  "password": "$2b$10$7gqZ5ZaST1/6I8OmiB.ale0xX3VPn8FYKsl.Ydd64hT.DqO4LDzzu",
+  "points": 40,
+  "championsCreated": [
+    "Kaisa",
+    "Annie",
+    "Rengar",
+    "Rumble"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81ad5500a16fd0c0dcbef"
+  },
+  "email": "misho@abv.bg",
+  "password": "$2b$10$Sq5TtpDUazt/srOZQ3OQvO3KquA8vryayMBa2R/WJoL6YuCnZd24e",
   "points": 10,
   "championsCreated": [
-    "MissFortune"
+    "Trundle"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f81d80500a16fd0c0dcc0e"
+  },
+  "email": "gosho@abv.bg",
+  "password": "$2b$10$FSA3fhhS9h2GYOkxpV6RYuMQ6EOL6lLPg5nOm2uMPlIZuJADkqDym",
+  "points": 10,
+  "championsCreated": [
+    "Karma",
+    "Karma"
   ],
   "__v": 0
 }]
