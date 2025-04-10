@@ -78,6 +78,19 @@ router.get('/catalog', async (req, res) => {
 			.json({ message: 'Error fetching champions', error: error.message });
 	}
 });
+router.get('/catalog', async (req, res) => {
+	try {
+		const champions = await championManager
+			.GiveAllChampions()
+			.select('name -_id')
+			.sort({ name: 1 });
+		res.status(200).json(champions.map((c) => c.name));
+	} catch (error) {
+		res
+			.status(500)
+			.json({ message: 'Error fetching champions', error: error.message });
+	}
+});
 
 router.get('/leaderboard', async (req, res) => {
 	try {
@@ -150,6 +163,17 @@ router.put('/champions/:id', async (req, res) => {
 			.json({ message: 'Champion updated successfully', champion: updated });
 	} catch (error) {
 		res.status(400).json({ message: error.message });
+	}
+});
+
+router.get('/demo', async (req, res) => {
+	try {
+		const champions = await championManager.GiveAllChampions();
+		res.status(200).json(champions);
+	} catch (error) {
+		res
+			.status(500)
+			.json({ message: 'Error fetching champions', error: error.message });
 	}
 });
 

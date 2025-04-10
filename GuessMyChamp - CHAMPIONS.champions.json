@@ -73,4 +73,136 @@
   "releaseYear": 2020,
   "creator": "Miro@abv.bg",
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6a6138b3fbbb636a3754f"
+  },
+  "name": "Sivir",
+  "position": "Marksman",
+  "gender": "Female",
+  "releaseYear": 2010,
+  "creator": "mitko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6a6318b3fbbb636a37554"
+  },
+  "name": "Twitch",
+  "position": "Marksman",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "mitko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6a64c8b3fbbb636a37559"
+  },
+  "name": "Aatrox",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2011,
+  "creator": "mitko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6db52c2819419192a771f"
+  },
+  "name": "Gangplank",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "mitko@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6dfe84f11d21e3ed3387d"
+  },
+  "name": "Nocturne",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2011,
+  "creator": "tit@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6e0444f11d21e3ed3388d"
+  },
+  "name": "Nunu",
+  "position": "Jungle",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "tit@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6e0644f11d21e3ed33896"
+  },
+  "name": "Teemo",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "tit@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6e0744f11d21e3ed3389b"
+  },
+  "name": "Syndra",
+  "position": "Mid",
+  "gender": "Female",
+  "releaseYear": 2013,
+  "creator": "tit@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6efa01b683d2e1c22909a"
+  },
+  "name": "Trundle",
+  "position": "Top",
+  "gender": "Male",
+  "releaseYear": 2009,
+  "creator": "tit@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6f4921b683d2e1c229111"
+  },
+  "name": "Leona",
+  "position": "Support",
+  "gender": "Female",
+  "releaseYear": 2010,
+  "creator": "krasi@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6f54a1b683d2e1c22911f"
+  },
+  "name": "MissFortune",
+  "position": "Marksman",
+  "gender": "Female",
+  "releaseYear": 2009,
+  "creator": "petq@abv.bg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6f8501b683d2e1c229143"
+  },
+  "name": "Corki",
+  "position": "Marksman",
+  "gender": "Male",
+  "releaseYear": 2011,
+  "creator": "tit@abv.bg",
+  "__v": 0
 }]

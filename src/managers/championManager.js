@@ -44,7 +44,7 @@ exports.addChampion = async (championData) => {
 
 exports.GiveAllChampions = async () => {
 	try {
-		const champions = await Champion.find().select('name').sort({ name: 1 });
+		const champions = await Champion.find();
 		return champions;
 	} catch (error) {
 		throw error;
